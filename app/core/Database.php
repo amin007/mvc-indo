@@ -17,8 +17,8 @@ class Database
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
 		$dsn = DB_TYPE . ':host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8';
 		$option = [
-			PDO::ATTR_PRESISTENT => true,
-			PDO::ATTR_ERRORMODE => PDD::ERRMODE_EXCEPTION
+			PDO::ATTR_PERSISTENT => true,
+			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 		];
 		try{
 			$this->dbh = new PDO($dsn, DB_USER, DB_PASS, $option);
