@@ -8,12 +8,23 @@ class App
 	protected $method = 'index';
 	protected $params = [];
 #------------------------------------------------------------------------------------------
+	public function semakPembolehubah($senarai,$jadual,$p='0')
+	{
+		echo '<pre>$' . $jadual . '=><br>';
+		if($p == '0') print_r($senarai);
+		if($p == '1') var_export($senarai);
+		if($p == '2') var_dump($senarai);
+		echo '</pre>';//*/
+		//$this->semakPembolehubah($ujian,'ujian',0);
+		#http://php.net/manual/en/function.var-export.php
+		#http://php.net/manual/en/function.print-r.php
+	}
+#------------------------------------------------------------------------------------------
 	public function __construct()
 	{
 		$url = $this->parseURL();
-		echo '<pre>semak $url=>';var_dump($url);echo '</pre>';
-		echo '<pre>semak $_GET[url]=>';print_r($_GET['url']);echo '</pre>';
-		echo '<pre>semak $url=>';print_r($url);echo '</pre>';
+		$this->semakPembolehubah($url,'url');
+
 	}
 #------------------------------------------------------------------------------------------
 	public function parseURL()
