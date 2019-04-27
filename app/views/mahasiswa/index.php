@@ -14,9 +14,6 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			<?php foreach($data['mhs'] as $mhs):?>
 			<ul>
 			<li><?php echo $mhs['nama'] ?></li>
-			<li><?php echo $mhs['nokp'] ?></li>
-			<li><?php echo $mhs['email'] ?></li>
-			<li><?php echo $mhs['jurusan'] ?></li>
 			</ul>
 			<?php endforeach;?>
 			<?php endif;?>
