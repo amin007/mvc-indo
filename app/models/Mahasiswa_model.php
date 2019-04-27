@@ -44,7 +44,11 @@ class Mahasiswa_model
 #------------------------------------------------------------------------------------------
 	public function getAllMahasiswa()
 	{
-		return $this->mhs;
+		$sql = 'SELECT * FROM mahasiswa';
+		$this->stmt = $this->dbh->prepare($sql);
+		$this->stmt->execute();
+		return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+		//return $this->mhs;
 	}
 #------------------------------------------------------------------------------------------
 #==========================================================================================
