@@ -13,8 +13,9 @@ class Home extends Controller
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
 		$data['tajukAtas'] = 'Halaman Utama Daa';
-		$this->view('template/diatas');
-		$this->view('home/index');
+		//$data['nama'] = $this->model('User_model')->getUser();
+		$this->view('template/diatas', $data);
+		$this->view('home/index', $data);
 		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
