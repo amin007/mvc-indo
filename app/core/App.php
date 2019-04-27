@@ -24,6 +24,7 @@ class App
 	{
 		$url = $this->parseURL();
 		//$this->semakPembolehubah($url,'url');
+		# controller
 		if( file_exists('../app/controllers/' . $url[0] . '.php') )
 		{
 			$this->controller = $url[0];
