@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Bootstrap & Font Awesome</title>
+<title><?php echo $data['tajukAtas'] ?></title>
 <!-- Bootstrap Core CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom Fonts -->
