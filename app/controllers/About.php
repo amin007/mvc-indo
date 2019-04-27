@@ -12,8 +12,10 @@ class About extends Controller
 	public function index($nama = 'Rahsia', $kerja = 'Tanam Anggur', $umur = 25)
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
-		//echo "Nama saya $nama, kerja saya $kerja, <br>";
-		$this->view('about/index');
+		$data['nama'] = $nama;
+		$data['kerja'] = $kerja;
+		$data['umur'] = $umur;
+		$this->view('about/index', $data);
 	}
 #------------------------------------------------------------------------------------------
 	public function page()
