@@ -13,9 +13,9 @@ class Mahasiswa extends Controller
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
 		$data['tajukAtas'] = 'Daftar Mahasiswa';
-		$data['nama'] = $this->model('User_model')->getUser();
+		$data['mhs'] = $this->model('Mahasiswa_model')->getAllMahasiswa();
 		$this->view('template/diatas', $data);
-		$this->view('home/index', $data);
+		$this->view('mahasiswa/index', $data);
 		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
