@@ -11,11 +11,11 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			<h3><?php echo $data['tajukAtas'] ?></h3>
 
 			<?php if( isset($data['mhs']) ):?>
-			<?php foreach($data['mhs'] as $mhs):?>
 			<ul>
+			<?php foreach($data['mhs'] as $mhs):?>
 			<li><?php echo $mhs['nama'] ?></li>
-			</ul>
 			<?php endforeach;?>
+			</ul>
 			<?php endif;?>
 		</div><!-- / class="col-6" -->
 	</div><!-- / class="row" -->
