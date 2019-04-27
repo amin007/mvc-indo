@@ -63,10 +63,6 @@ END;
 	}
 #-----------------------------------------------------------------------------------------------------------
 //$namafail = basename($_SERVER['PHP_SELF']);//Returns The Current PHP File Name
-//$namafail = basename(__DIR__);//Returns The Current PHP Folder
-//ditengah($namafail);
+$namafail = basename(__DIR__);//Returns The Current PHP Folder
+ditengah($namafail);
 #-----------------------------------------------------------------------------------------------------------
-# mula koding asas
-//semakPembolehubah($_GET['url'],'url');
-require_once '../app/init.php';
-$app = new App;
