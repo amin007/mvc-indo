@@ -50,10 +50,23 @@ print <<<END
 END;
 }
 #-----------------------------------------------------------------------------------------------------------
+	function semakPembolehubah($senarai,$jadual,$p='0')
+	{
+		echo '<pre>$' . $jadual . '=><br>';
+		if($p == '0') print_r($senarai);
+		if($p == '1') var_export($senarai);
+		if($p == '2') var_dump($senarai);
+		echo '</pre>';//*/
+		//$this->semakPembolehubah($ujian,'ujian',0);
+		#http://php.net/manual/en/function.var-export.php
+		#http://php.net/manual/en/function.print-r.php
+	}
+#-----------------------------------------------------------------------------------------------------------
 //$namafail = basename($_SERVER['PHP_SELF']);//Returns The Current PHP File Name
 //$namafail = basename(__DIR__);//Returns The Current PHP Folder
 //ditengah($namafail);
 #-----------------------------------------------------------------------------------------------------------
 # mula koding asas
+//semakPembolehubah($_GET['url'],'url');
 require_once '../app/init.php';
 $app = new App;
