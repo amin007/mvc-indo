@@ -38,7 +38,7 @@ class Database
 #------------------------------------------------------------------------------------------
 	public function bind($param, $value, $type = null)
 	{
-		if( is_null($tyoe) ):
+		if( is_null($type) ):
 			switch(true):
 				case is_int($value): $type = PDO::PARAM_INT; break;
 				case is_bool($value): $type = PDO::PARAM_BOOL; break;
