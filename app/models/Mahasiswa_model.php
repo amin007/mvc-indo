@@ -25,22 +25,6 @@ class Mahasiswa_model
 			"jurusan" => "Komputer",
 		],
 	];
-	private $dbh;
-	private $stmt;
-#------------------------------------------------------------------------------------------
-	public function __construct()
-	{
-		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
-		$dsn = DB_TYPE . ':host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8';
-
-		try{
-			$this->dbh = new PDO($dsn, DB_USER, DB_PASS);
-		}
-		catch(PDOException $e)
-		{
-			die($e->getMessaage());
-		}
-	}
 #------------------------------------------------------------------------------------------
 	public function getAllMahasiswa()
 	{
