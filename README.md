@@ -1,5 +1,5 @@
-# mvc-indo
-mengodek mvc barui dari indonedia
+# mvc_indo
+mengodek mvc baru dari indonedia.
 
 Ia terdiri dari 3 bahagian utama
 * user
