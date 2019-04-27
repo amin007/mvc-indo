@@ -16,6 +16,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
 	<a class="navbar-brand" href="<?php echo BASEURL?>">PHP MVC</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 	aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,4 +29,5 @@
 			<a class="nav-item nav-link" href="<?php echo BASEURL?>about">About</a>
 		</div>
 	</div>
+</div><!-- class="container" -->
 </nav>
