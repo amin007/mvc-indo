@@ -16,7 +16,7 @@ class About extends Controller
 		$data['kerja'] = $kerja;
 		$data['umur'] = $umur;
 		$data['tajukAtas'] = 'About Me';
-		$this->view('template/diatas');
+		$this->view('template/diatas', $data);
 		$this->view('about/index', $data);
 		$this->view('template/dibawah');
 	}
@@ -24,13 +24,19 @@ class About extends Controller
 	public function page()
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$data['tajukAtas'] = 'About Page';
+		$this->view('template/diatas', $data);
 		$this->view('about/page');
+		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
 	public function saya()
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$data['tajukAtas'] = 'Saya';
+		$this->view('template/diatas', $data);
 		$this->view('about/saya');
+		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
 #==========================================================================================
