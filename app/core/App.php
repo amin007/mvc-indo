@@ -23,7 +23,12 @@ class App
 	public function __construct()
 	{
 		$url = $this->parseURL();
-		$this->semakPembolehubah($url,'url');
+		//$this->semakPembolehubah($url,'url');
+		if( file_exists('../app/controllers/' . $url[0] . '.php') )
+		{
+			$this->controller = $url[0];
+			unset($url[0]);
+		}
 
 	}
 #------------------------------------------------------------------------------------------
