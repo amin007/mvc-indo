@@ -10,6 +10,7 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 		<div class="col-6">
 			<h3><?php echo $data['tajukAtas'] ?></h3>
 
+			<?php if( isset($data['mhs']) ):?>
 			<?php foreach($data['mhs'] as $mhs):?>
 			<ul>
 			<li><?php echo $mhs['nama'] ?></li>
@@ -18,6 +19,7 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			<li><?php echo $mhs['jurusan'] ?></li>
 			</ul>
 			<?php endforeach;?>
+			<?php endif;?>
 		</div><!-- / class="col-6" -->
 	</div><!-- / class="row" -->
 </div><!-- class="container" -->
