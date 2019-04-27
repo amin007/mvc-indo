@@ -25,13 +25,19 @@ class Mahasiswa_model
 			"jurusan" => "Komputer",
 		],
 	];
+	private $table = 'mahasiswa';
+	private $db;
+#------------------------------------------------------------------------------------------
+	public function __construct()
+	{
+		$this->db = new Database;
+	}
 #------------------------------------------------------------------------------------------
 	public function getAllMahasiswa()
 	{
-		$sql = 'SELECT * FROM mahasiswa';
-		$this->stmt = $this->dbh->prepare($sql);
-		$this->stmt->execute();
-		return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+		$sql = 'SELECT * FROM ' . $this->table;
+		$this->db->query($sql);
+		return $this->db->resultSet();
 		//return $this->mhs;
 	}
 #------------------------------------------------------------------------------------------
