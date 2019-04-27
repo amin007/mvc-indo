@@ -4,6 +4,17 @@ class Mahasiswa extends Controller
 {
 #==========================================================================================
 #------------------------------------------------------------------------------------------
+	function semakPembolehubah($senarai,$jadual,$p='0')
+	{
+		echo '<pre>$' . $jadual . '=><br>';
+		if($p == '0') print_r($senarai);
+		if($p == '1') var_export($senarai);
+		if($p == '2') var_dump($senarai);
+		echo '</pre>';//*/
+		//$this->semakPembolehubah($ujian,'ujian',0);
+		#http://php.net/manual/en/function.var-export.php
+		#http://php.net/manual/en/function.print-r.php
+	}
 #------------------------------------------------------------------------------------------
 /*	public function __construct()
 	{
@@ -27,6 +38,15 @@ class Mahasiswa extends Controller
 		$this->view('template/diatas', $data);
 		$this->view('mahasiswa/detail', $data);
 		$this->view('template/dibawah');
+	}
+#------------------------------------------------------------------------------------------
+	public function tambah()
+	{
+		//$this->semakPembolehubah($_POST,'_POST');
+		if( $this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST) > 0 ):
+			header('Location:' . BASEURL . 'mahasiswa');
+			exit();
+		endif;
 	}
 #------------------------------------------------------------------------------------------
 #==========================================================================================
