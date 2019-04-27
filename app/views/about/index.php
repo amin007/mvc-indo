@@ -4,7 +4,6 @@
 $fail = 'Index';
 $folder = basename(__DIR__);//Returns The Current PHP Folder
 #-----------------------------------------------------------------------------------------------------------
-diatas();
 /*echo '<p class="lead">Nama saya ' . $data['nama']
 . ', umur saya ' . $data['umur']
 . ', kerja saya ' . $data['kerja'] . '</p>//*/
@@ -23,5 +22,4 @@ print <<<END
 </div>
 </div><!-- class="container" -->
 END;
-dibawah();
 #-----------------------------------------------------------------------------------------------------------
