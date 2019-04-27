@@ -15,7 +15,9 @@ class About extends Controller
 		$data['nama'] = $nama;
 		$data['kerja'] = $kerja;
 		$data['umur'] = $umur;
+		$this->view('template/diatas');
 		$this->view('about/index', $data);
+		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
 	public function page()
