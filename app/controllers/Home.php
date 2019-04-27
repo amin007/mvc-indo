@@ -12,7 +12,9 @@ class Home extends Controller
 	public function index()
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$this->view('template/diatas');
 		$this->view('home/index');
+		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
 #==========================================================================================
