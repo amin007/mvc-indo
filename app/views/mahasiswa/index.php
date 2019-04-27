@@ -11,9 +11,14 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			<h3><?php echo $data['tajukAtas'] ?></h3>
 
 			<?php if( isset($data['mhs']) ):?>
-			<ul>
-			<?php foreach($data['mhs'] as $mhs):?>
-			<li><?php echo $mhs['nama'] ?></li>
+			<ul class="list-group">
+			<?php foreach($data['mhs'] as $mhs):
+			$p = BASEURL . 'mahasiswa/detail/' . $mhs['id'];
+			?>
+			<li class="list-group-item d-flex justify-content-between align-items-center"><?php
+				echo $mhs['nama'] ?>
+				<a href="<?php echo $p ?>" class="badge badge-primary">detail</a>
+			</li>
 			<?php endforeach;?>
 			</ul>
 			<?php endif;?>
