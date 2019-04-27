@@ -9,10 +9,10 @@ class About
 	{
 	}*/
 #------------------------------------------------------------------------------------------
-	public function index($nama = 'Rahsia', $kerja = 'Tanam Anggur')
+	public function index($nama = 'Rahsia', $kerja = 'Tanam Anggur', $umur = 25)
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
-		echo "Nama saya adalah $nama, kerja saya adalah $kerja <br>";
+		echo "Nama saya adalah $nama, kerja saya adalah $kerja, umur saya $umur tahun<br>";
 	}
 #------------------------------------------------------------------------------------------
 	public function page()
