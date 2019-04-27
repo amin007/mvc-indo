@@ -19,5 +19,15 @@ class Mahasiswa extends Controller
 		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
+	public function detail($id)
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$data['tajukAtas'] = 'Detail Mahasiswa';
+		$data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaById($id);
+		$this->view('template/diatas', $data);
+		$this->view('mahasiswa/detail', $data);
+		$this->view('template/dibawah');
+	}
+#------------------------------------------------------------------------------------------
 #==========================================================================================
 }
