@@ -2,7 +2,7 @@
 $(function(){
 
 	$('.tampilModalUbah').on('click', function(){
-		console.log('boboiboy kuasa 2');
+		$('#formModalLabel').html('Ubah Data Mahasiswa');
 	});
 
 });
