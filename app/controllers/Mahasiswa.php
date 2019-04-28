@@ -76,5 +76,20 @@ class Mahasiswa extends Controller
 		echo json_encode($data);
 	}
 #------------------------------------------------------------------------------------------
+	public function ubah()
+	{
+		//$this->semakPembolehubah($_POST,'_POST');
+		if( $this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST) > 0 ):
+			Flasher::setFlash('berjaya','diubah','success');
+			header('Location:' . BASEURL . 'mahasiswa');
+			exit();
+		else:
+			Flasher::setFlash('gagal','diubah','danger');
+			header('Location:' . BASEURL . 'mahasiswa');
+			exit();
+		endif;
+	}
+#------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------
 #==========================================================================================
 }
