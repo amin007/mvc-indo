@@ -49,6 +49,8 @@ aria-labelledby="judulModal" aria-hidden="true">
 			</div>
 			<div class="modal-body">
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<input type="hidden" name="id" id="id">
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <div class="form-group row">
 	<label for="kodNama" class="col-sm-2 col-form-label">Nama</label>
 	<div class="col-sm-10"><div class="input-group mb-2">
