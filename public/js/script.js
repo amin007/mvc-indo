@@ -5,6 +5,7 @@ $(function(){
 		$('#formModalLabel').html('Tambah Data Mahasiswa');
 		$('.modal-footer button[type=submit]').html('Tambah Data');
 		$('#kodInputNama').val('');
+		$('#Nama').html('@@');
 		$('#kodInputNoKP').val('');
 		$('#kodInputEmail').val('');
 		$('#kodInputJurusan').val('');
@@ -24,9 +25,13 @@ $(function(){
 			dataType: 'json',
 			success: function(data) {
 				$('#kodInputNama').val(data.nama);
+				$('#Nama').html(data.nama);
 				$('#kodInputNoKP').val(data.nokp);
+				$('#NoKP').html(data.nokp);
 				$('#kodInputEmail').val(data.email);
+				$('#Email').html(data.email);
 				$('#kodInputJurusan').val(data.jurusan);
+				$('#Jurusan').html(data.jurusan);
 				$('#id').val(data.id);
 			}
 		});
