@@ -6,6 +6,10 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 #-----------------------------------------------------------------------------------------------------------
 ?>
 <div class="container mt-5">
+	<div class="row"><div class="col-lg-6">
+		<?php Flasher::flash(); echo "\n";
+	?></div><!-- / class="col-lg-6"> -->
+	</div><!-- / class="row" -->
 	<div class="row">
 		<div class="col-6">
 			<h3><?php echo $data['tajukAtas'] ?></h3>
@@ -15,18 +19,13 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			Tambah Data Mahasiswa
 			</button>
 
-			<?php if( isset($data['mhs']) ):?>
-			<ul class="list-group">
+			<?php if( isset($data['mhs']) ):?><ul class="list-group">
 			<?php foreach($data['mhs'] as $mhs):
 			$p = BASEURL . 'mahasiswa/detail/' . $mhs['id'];
-			?>
-			<li class="list-group-item d-flex justify-content-between align-items-center"><?php
-				echo $mhs['nama'] ?>
-				<a href="<?php echo $p ?>" class="badge badge-primary">detail</a>
-			</li>
-			<?php endforeach;?>
-			</ul>
-			<?php endif;?>
+			?><li class="list-group-item d-flex justify-content-between align-items-center"><?php
+				echo $mhs['nama'] . "\n\t\t\t\t";
+			?><a href="<?php echo $p ?>" class="badge badge-primary">detail</a>
+			</li><?php endforeach; echo "\n\t\t\t"; ?></ul><?php endif; echo "\n"; ?>
 		</div><!-- / class="col-6" -->
 	</div><!-- / class="row" -->
 </div><!-- class="container" -->
