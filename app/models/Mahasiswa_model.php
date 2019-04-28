@@ -63,7 +63,7 @@ class Mahasiswa_model
 		$this->db->bind('jurusan', $data['jurusan']);
 
 		$this->db->execute();
-		return $this->db->rowCount();
+		return $this->db->rowCount();//*/
 		//return 0;
 	}
 #------------------------------------------------------------------------------------------
