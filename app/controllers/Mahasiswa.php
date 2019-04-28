@@ -44,6 +44,11 @@ class Mahasiswa extends Controller
 	{
 		//$this->semakPembolehubah($_POST,'_POST');
 		if( $this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST) > 0 ):
+			Flasher::setFlash('berjaya','ditambah','success');
+			header('Location:' . BASEURL . 'mahasiswa');
+			exit();
+		else:
+			Flasher::setFlash('gagal','ditambah','danger');
 			header('Location:' . BASEURL . 'mahasiswa');
 			exit();
 		endif;
