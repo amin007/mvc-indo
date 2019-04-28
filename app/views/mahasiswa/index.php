@@ -54,7 +54,7 @@ aria-labelledby="judulModal" aria-hidden="true">
 <div class="form-group row">
 	<label for="kodNama" class="col-sm-2 col-form-label">Nama</label>
 	<div class="col-sm-10"><div class="input-group mb-2">
-		<div class="input-group-prepend"><div class="input-group-text">@</div></div>
+		<div class="input-group-prepend"><div class="input-group-text" id="Nama">@</div></div>
 		<input type="text" name="nama" class="form-control" id="kodInputNama" placeholder="nama">
 	</div></div>
 </div>
@@ -62,7 +62,7 @@ aria-labelledby="judulModal" aria-hidden="true">
 <div class="form-group row">
 	<label for="kodNoKP" class="col-sm-2 col-form-label">No KP</label>
 	<div class="col-sm-10"><div class="input-group mb-2">
-		<div class="input-group-prepend"><div class="input-group-text">@</div></div>
+		<div class="input-group-prepend"><div class="input-group-text" id="NoKP">@</div></div>
 		<input type="number" name="nokp" class="form-control" id="kodInputNoKP" placeholder="nokp">
 	</div></div>
 </div>
@@ -70,7 +70,7 @@ aria-labelledby="judulModal" aria-hidden="true">
 <div class="form-group row">
 	<label for="kodEmail" class="col-sm-2 col-form-label">Email</label>
 	<div class="col-sm-10"><div class="input-group mb-2">
-		<div class="input-group-prepend"><div class="input-group-text">@</div></div>
+		<div class="input-group-prepend"><div class="input-group-text" id="Email">@</div></div>
 		<input type="email" name="email" class="form-control" id="kodInputEmail" placeholder="email">
 	</div></div>
 </div>
@@ -78,7 +78,7 @@ aria-labelledby="judulModal" aria-hidden="true">
 <div class="form-group row">
 	<label for="kodJurusan" class="col-sm-2 col-form-label">Jurusan</label>
 	<div class="col-sm-10"><div class="input-group mb-2">
-		<div class="input-group-prepend"><div class="input-group-text">@</div></div>
+		<div class="input-group-prepend"><div class="input-group-text" id="Jurusan">@</div></div>
 		<select name="jurusan" class="form-control" id="kodInputJurusan">
 		<option>Art</option>
 		<option>Akaun</option>
