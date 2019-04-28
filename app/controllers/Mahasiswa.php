@@ -68,10 +68,12 @@ class Mahasiswa extends Controller
 		endif;
 	}
 #------------------------------------------------------------------------------------------
-	public function getubah()
+	public function getubah($idx = 1)
 	{
-		$id = isset($_POST['id']) ? $_POST['id'] : null;//echo $_POST['id'];
-		$this->model('Mahasiswa_model')->getDataUbah($id);
+		//$id = isset($_POST['id']) ? $_POST['id'] : $idx;//echo $_POST['id'];
+		$id = isset($_GET['id']) ? $_GET['id'] : $idx;//echo $_POST['id'];
+		$data = $this->model('Mahasiswa_model')->getMahasiswaById($id);
+		echo json_encode($data);
 	}
 #------------------------------------------------------------------------------------------
 #==========================================================================================
