@@ -10,8 +10,16 @@ $(function(){
 		$('#formModalLabel').html('Ubah Data Mahasiswa');
 		$('.modal-footer button[type=submit]').html('Ubah Data');
 
-		const id = $(this).data('id');
-		console.log(id);
+		const id = $(this).data('id');//console.log(id);
+		$.ajax({
+			url: 'http://jpmuar07-pc/projek-github/orang_punya/mvc-indo/v00/mahasiswa/getubah',
+			data: { id:id },
+			method: 'POST',
+			//dataType: 'json',
+			success: function(data) {
+				console.log(data);
+			}
+		});
 	});
 
 });
