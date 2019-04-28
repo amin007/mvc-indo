@@ -69,5 +69,6 @@ END;
 #-----------------------------------------------------------------------------------------------------------
 # mula koding asas
 //semakPembolehubah($_GET['url'],'url');
+if ( !session_id() ) { session_start(); } //@session_start();
 require_once 'app/init.php';
 $app = new App;
