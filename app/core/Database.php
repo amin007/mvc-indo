@@ -4,6 +4,18 @@ class Database
 {
 #==========================================================================================
 #------------------------------------------------------------------------------------------
+	function semakPembolehubah($senarai,$jadual,$p='0')
+	{
+		echo '<pre>$' . $jadual . '=><br>';
+		if($p == '0') print_r($senarai);
+		if($p == '1') var_export($senarai);
+		if($p == '2') var_dump($senarai);
+		echo '</pre>';//*/
+		//$this->semakPembolehubah($ujian,'ujian',0);
+		#http://php.net/manual/en/function.var-export.php
+		#http://php.net/manual/en/function.print-r.php
+	}
+#------------------------------------------------------------------------------------------
 //echo '<hr>Nama class :' . __METHOD__ . '<hr>';
 	private $host = DB_HOST;
 	private $user = DB_USER;
@@ -27,6 +39,11 @@ class Database
 		{
 			die($e->getMessaage());
 		}
+	}
+#------------------------------------------------------------------------------------------
+	public function sql($query)
+	{
+		$this->semakPembolehubah($query,'sql');
 	}
 #------------------------------------------------------------------------------------------
 	public function query($query)
