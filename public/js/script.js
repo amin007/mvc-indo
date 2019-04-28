@@ -4,6 +4,11 @@ $(function(){
 	$('.tombolTambahData').on('click', function(){
 		$('#formModalLabel').html('Tambah Data Mahasiswa');
 		$('.modal-footer button[type=submit]').html('Tambah Data');
+		$('#kodInputNama').val('');
+		$('#kodInputNoKP').val('');
+		$('#kodInputEmail').val('');
+		$('#kodInputJurusan').val('');
+		$('#id').val('');
 	});
 
 	$('.tampilModalUbah').on('click', function(){
