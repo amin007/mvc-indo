@@ -40,7 +40,7 @@ aria-labelledby="judulModal" aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 <?php $post = BASEURL . 'mahasiswa/tambah'; ?>
-		<form method="POST" action="<?php echo $post ?>" autocomplete="off">
+		<form method="POST" action="<?php echo $post ?>" class="borangdaa" autocomplete="off">
 			<div class="modal-header">
 				<h5 class="modal-title" id="formModalLabel">Tambah Data Mahasiswa</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
