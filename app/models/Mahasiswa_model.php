@@ -79,6 +79,13 @@ class Mahasiswa_model
 #------------------------------------------------------------------------------------------
 	public function ubahDataMahasiswa($data)
 	{
+		# papar sql cara lama
+		/*$sql2 = ' UPDATE ' . $this->table . ' SET '
+			. "\r nama='".$data['nama']."', nokp='".$data['nokp']
+			. "', email='".$data['email']."', jurusan='".$data['jurusan']
+			. "'\r WHERE id=".$data['id']." ";
+		$this->db->sql($sql2);//*/
+		# papar sql cara baru
 		$sql = ' UPDATE ' . $this->table . ' SET '
 			. "\r nama=':nama', nokp=':nokp', email=':email', jurusan=':jurusan' "
 			. "\r WHERE id=':id' ";
