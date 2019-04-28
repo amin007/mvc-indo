@@ -70,8 +70,8 @@ class Mahasiswa extends Controller
 #------------------------------------------------------------------------------------------
 	public function getubah($idx = 0)
 	{
-		//$id = isset($_POST['id']) ? $_POST['id'] : $idx;//echo $_POST['id'];
-		$id = isset($_GET['id']) ? $_GET['id'] : $idx;//echo $_POST['id'];
+		$id = isset($_POST['id']) ? $_POST['id'] : $idx;//echo $_POST['id'];
+		//$id = isset($_GET['id']) ? $_GET['id'] : $idx;//echo $_POST['id'];
 		$data = $this->model('Mahasiswa_model')->getMahasiswaById($id);
 		echo json_encode($data);
 	}
