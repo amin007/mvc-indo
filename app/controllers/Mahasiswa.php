@@ -68,7 +68,7 @@ class Mahasiswa extends Controller
 		endif;
 	}
 #------------------------------------------------------------------------------------------
-	public function getubah($idx = 1)
+	public function getubah($idx = 0)
 	{
 		//$id = isset($_POST['id']) ? $_POST['id'] : $idx;//echo $_POST['id'];
 		$id = isset($_GET['id']) ? $_GET['id'] : $idx;//echo $_POST['id'];
