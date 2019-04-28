@@ -25,8 +25,8 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			$p2 = BASEURL . 'mahasiswa/hapus/' . $mhs['id'];
 			?><li class="list-group-item"><?php
 				echo $mhs['nama'] . "\n\t\t\t\t";
-			?><a href="<?php echo $p1 ?>" class="badge badge-primary">detail</a>
-			<a href="<?php echo $p2 ?>" class="badge badge-primary">hapus</a>
+			?><a href="<?php echo $p1 ?>" class="badge badge-primary float-right ml-1">detail</a>
+			<a href="<?php echo $p2 ?>" class="badge badge-primary float-right ml-1">hapus</a>
 			</li><?php endforeach; echo "\n\t\t\t"; ?></ul><?php endif; echo "\n"; ?>
 		</div><!-- / class="col-6" -->
 	</div><!-- / class="row" -->
