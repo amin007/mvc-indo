@@ -101,5 +101,15 @@ class Mahasiswa_model
 		//return 0;
 	}
 #------------------------------------------------------------------------------------------
+	public function cariDataMahasiswa($idx = 0)
+	{
+		$keyword = isset($_POST['keyword']) ? $_POST['keyword'] : $idx;
+		$sql = 'SELECT * FROM ' . $this->table . ' WHERE nama LIKE :keyword ';
+		$this->db->query($sql);
+		$this->db->bind('keyword', "%$keyword%");
+
+		return $this->db->resultSet();
+	}
+#------------------------------------------------------------------------------------------
 #==========================================================================================
 }
