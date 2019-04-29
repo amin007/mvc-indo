@@ -42,6 +42,16 @@ class Mahasiswa extends Controller
 		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
+	public function ubahdata($id)
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$data['tajukAtas'] = 'Ubah Mahasiswa';
+		$data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaById($id);
+		$this->view('template/diatas', $data);
+		$this->view('mahasiswa/ubahdata', $data);
+		$this->view('template/dibawah');
+	}
+#------------------------------------------------------------------------------------------
 	public function tambah()
 	{
 		//$this->semakPembolehubah($_POST,'_POST');
