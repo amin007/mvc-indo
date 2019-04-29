@@ -1,8 +1,7 @@
 <?php
 #-----------------------------------------------------------------------------------------------------------
 //$fail = basename($_SERVER['PHP_SELF']);//Returns The Current PHP File Name
-$fail = 'Index';
-$folder = basename(__DIR__);//Returns The Current PHP Folder
+//$folder = basename(__DIR__);//Returns The Current PHP Folder
 $p = BASEURL . 'mahasiswa';
 #-----------------------------------------------------------------------------------------------------------
 ?>
