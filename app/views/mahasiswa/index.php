@@ -10,12 +10,15 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 		<?php Flasher::flash(); echo "\n";
 	?></div><!-- / class="col-lg-6"> -->
 	</div><!-- / class="row" -->
+	<div class="row"><div class="col-lg-6">
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal"
+		data-target="#formModal">Tambah Data Mahasiswa</button>
+	</div><!-- / class="col-lg-6"> -->
+	</div><!-- / class="row" -->
 	<div class="row">
 		<div class="col-6">
 			<h3><?php echo $data['tajukAtas'] ?></h3>
-			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal"
-			data-target="#formModal">Tambah Data Mahasiswa</button>
 
 			<?php if( isset($data['mhs']) ):?><ul class="list-group">
 			<?php foreach($data['mhs'] as $mhs):
