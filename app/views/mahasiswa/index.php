@@ -16,6 +16,17 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 		data-target="#formModal">Tambah Data Mahasiswa</button>
 	</div><!-- / class="col-lg-6"> -->
 	</div><!-- / class="row" -->
+	<div class="row"><div class="col-lg-6">
+		<form method="POST" action="<?php echo BASEURL ?>mahasiswa/cari" autocomplete="off">
+		<div class="input-group">
+			<input type="text" class="form-control" name="keyword" id="keyword" placeholder="cari mahasiswa">
+			<div class="input-group-append">
+				<button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
+			</div>
+		</div>
+		</form>
+	</div><!-- / class="col-lg-6"> -->
+	</div><!-- / class="row" -->
 	<div class="row">
 		<div class="col-6">
 			<h3><?php echo $data['tajukAtas'] ?></h3>
