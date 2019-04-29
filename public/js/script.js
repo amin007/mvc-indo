@@ -17,13 +17,13 @@ $(function(){
 		$('.modal-footer button[type=submit]').html('Ubah Data');
 		$('.borangdaa').attr('action', '//jpmuar07-pc/projek-github/orang_punya/mvc-indo/v00/mahasiswa/ubah');
 
-		const id = $(this).data('id');//console.log(id);
+		const id = $(this).data('id');//console.log("id=" + id);
 		$.ajax({
 			url: '//jpmuar07-pc/projek-github/orang_punya/mvc-indo/v00/mahasiswa/getubah',
 			data: {id : id},
 			method: 'POST',
 			dataType: 'json',
-			success: function(data) {
+			success: function(data) {//console.log("nama baru=" + data.nama);
 				$('#kodInputNama').val(data.nama);
 				$('#Nama').html(data.nama);
 				$('#kodInputNoKP').val(data.nokp);
