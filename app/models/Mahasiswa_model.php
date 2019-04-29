@@ -77,6 +77,16 @@ class Mahasiswa_model
 		return $this->db->rowCount();//*/
 	}
 #------------------------------------------------------------------------------------------
+	public function sqlUbahData($data)
+	{
+		# papar sql cara lama
+		$sql2 = ' UPDATE ' . $this->table . ' SET '
+			. "\r nama='".$data['nama']."', nokp='".$data['nokp']
+			. "', email='".$data['email']."', jurusan='".$data['jurusan']
+			. "'\r WHERE id=".$data['id']." ";
+		$this->db->sql($sql2);
+	}
+#------------------------------------------------------------------------------------------
 	public function ubahDataMahasiswa($data)
 	{
 		# papar sql cara baru
