@@ -102,6 +102,17 @@ class Mahasiswa extends Controller
 		endif;
 	}
 #------------------------------------------------------------------------------------------
+	public function ubah2()
+	{
+		$this->semakPembolehubah($_POST,'_POST');
+		$kira = $this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST);
+		//$kira = $this->model('Mahasiswa_model')->sqlUbahData($_POST);
+		echo '$kira = ' . $kira . '<br>';
+		$p0 = BASEURL . 'mahasiswa/';
+		echo '<a href="' . $p0 . '">kembali</a>';
+		//if( $kira > 0 ):
+	}
+#------------------------------------------------------------------------------------------
 	public function cari()
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
