@@ -36,12 +36,14 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 			$p1 = BASEURL . 'mahasiswa/detail/' . $mhs['id'];
 			$p2 = BASEURL . 'mahasiswa/hapus/' . $mhs['id'];
 			$p3 = BASEURL . 'mahasiswa/ubah/' . $mhs['id'];
+			$p4 = BASEURL . 'mahasiswa/ubahdata/' . $mhs['id'];
 			?><li class="list-group-item"><?php
 				echo $mhs['nama'] . "\n\t\t\t\t";
 			?><a href="<?php echo $p2 ?>" class="badge badge-danger float-right ml-1"
 			onclick="return confirm('yakin');">hapus</a>
-			<a href="<?php echo $p3 ?>" class="badge badge-success float-right ml-1 tampilModalUbah"
-			data-toggle="modal" data-target="#formModal" data-id="<?php echo $mhs['id'] ?>">ubah</a>
+			<!-- a href="<?php echo $p3 ?>" class="badge badge-success float-right ml-1 tampilModalUbah"
+			data-toggle="modal" data-target="#formModal" data-id="<?php echo $mhs['id'] ?>">ubah</a -->
+			<a href="<?php echo $p4 ?>" class="badge badge-success float-right ml-1">ubah</a>
 			<a href="<?php echo $p1 ?>" class="badge badge-primary float-right ml-1">detail</a>
 			</li><?php endforeach; echo "\n\t\t\t"; ?></ul><?php endif; echo "\n"; ?>
 		</div><!-- / class="col-6" -->
