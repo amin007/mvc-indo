@@ -6,10 +6,10 @@ $p = BASEURL . 'mahasiswa';
 #-----------------------------------------------------------------------------------------------------------
 ?>
 <div class="container">
-<div class="row"><div class="col-lg-6">
-	<h3><?php echo $data['tajukAtas'] ?></h3>
-</div><!-- / class="col-lg-6"> -->
-</div><!-- / class="row" -->
+	<div class="row"><div class="col-lg-6">
+		<h3><?php echo $data['tajukAtas'] ?></h3>
+	</div><!-- / class="col-lg-6"> -->
+	</div><!-- / class="row" -->
 
 	<div class="card-group">
 		<div class="card bg-light mt-1" style="max-width: 20rem;"><div class="card-body">
