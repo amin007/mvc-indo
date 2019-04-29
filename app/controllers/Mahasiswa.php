@@ -24,7 +24,9 @@ class Mahasiswa extends Controller
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
 		$data['tajukAtas'] = 'Daftar Mahasiswa';
-		$data['mhs'] = $this->model('Mahasiswa_model')->getAllMahasiswa();
+		$data['mhs'] = (isset($_POST['keyword'])) ?
+			$this->model('Mahasiswa_model')->cariDataMahasiswa()
+			: $this->model('Mahasiswa_model')->getAllMahasiswa();
 		$this->view('template/diatas', $data);
 		$this->view('mahasiswa/index', $data);
 		$this->view('template/dibawah');
