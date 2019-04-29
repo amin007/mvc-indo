@@ -38,7 +38,7 @@ function borangubah($data)
 ?>
 		<form method="POST" action="<?php echo $post ?>" class="borangdaa" autocomplete="off">
 			<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
-			<input type="hidden"  name="nama" value="<?php echo $data['id'] ?>">
+			<input type="hidden" name="id" value="<?php echo $data['id'] ?>">
 			<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
 			<div class="form-group row">
 				<label for="kodNama" class="col-sm-2 col-form-label">Nama</label>
