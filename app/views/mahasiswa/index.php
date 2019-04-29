@@ -17,7 +17,7 @@ $folder = basename(__DIR__);//Returns The Current PHP Folder
 	</div><!-- / class="col-lg-6"> -->
 	</div><!-- / class="row" -->
 	<div class="row"><div class="col-lg-6">
-		<form method="POST" action="<?php echo BASEURL ?>mahasiswa/cari" autocomplete="off">
+		<form method="POST" action="<?php echo BASEURL ?>mahasiswa" autocomplete="off">
 		<div class="input-group">
 			<input type="text" class="form-control" name="keyword" id="keyword" placeholder="cari mahasiswa">
 			<div class="input-group-append">
