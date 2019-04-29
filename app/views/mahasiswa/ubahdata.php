@@ -11,24 +11,20 @@ $p = BASEURL . 'mahasiswa';
 </div><!-- / class="col-lg-6"> -->
 </div><!-- / class="row" -->
 
-<div class="row">
-	<div class="col-sm-3">
-		<div class="card"><div class="card-body">
+	<div class="card-group">
+		<div class="card bg-light mt-1" style="max-width: 20rem;"><div class="card-body">
 			<h5 class="card-title"><?php echo $data['mhs']['nama'] ?></h5>
 			<h6 class="card-subtitle mb-2 text-muted"><?php echo $data['mhs']['nokp'] ?></h6>
 			<p class="card-text"><?php echo $data['mhs']['email'] ?></p>
 			<p class="card-text"><?php echo $data['mhs']['jurusan'] ?></p>
 			<a href="<?php echo $p ?>"  class="badge badge-primary">Kembali</a>
 		</div></div>
-	</div>
-	<div class="col-sm-6">
-		<div class="card"><div class="card-body">
+		<div class="card border-success mt-1"><div class="card-body">
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 		<?php borangubah($data['mhs']); ?>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 		</div></div>
-	</div>
-</div>
+	</div><!-- div class="card-group" -->
 </div><!-- / class="container mt-5" -->
 
 <?php
