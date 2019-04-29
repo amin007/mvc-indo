@@ -102,7 +102,7 @@ class Mahasiswa extends Controller
 		endif;
 	}
 #------------------------------------------------------------------------------------------
-	public function ubah2()
+/*	public function ubah2()
 	{
 		$this->semakPembolehubah($_POST,'_POST');
 		$kira = $this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST);
@@ -111,7 +111,7 @@ class Mahasiswa extends Controller
 		$p0 = BASEURL . 'mahasiswa/';
 		echo '<a href="' . $p0 . '">kembali</a>';
 		//if( $kira > 0 ):
-	}
+	}//*/
 #------------------------------------------------------------------------------------------
 	public function cari()
 	{
