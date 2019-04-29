@@ -90,5 +90,15 @@ class Mahasiswa extends Controller
 		endif;
 	}
 #------------------------------------------------------------------------------------------
+	public function cari()
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$data['tajukAtas'] = 'Daftar Mahasiswa';
+		$data['mhs'] = $this->model('Mahasiswa_model')->cariDataMahasiswa();
+		$this->view('template/diatas', $data);
+		$this->view('mahasiswa/index', $data);
+		$this->view('template/dibawah');
+	}
+#------------------------------------------------------------------------------------------
 #==========================================================================================
 }
