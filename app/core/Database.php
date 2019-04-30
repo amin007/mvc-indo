@@ -38,7 +38,10 @@ class Database
 		}
 		catch(PDOException $e)
 		{
-			die($e->getMessaage());
+			echo '<pre>';
+			echo $e->getMessage();
+			echo '</pre>';
+			exit;
 		}
 	}
 #------------------------------------------------------------------------------------------
