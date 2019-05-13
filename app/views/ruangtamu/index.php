@@ -51,19 +51,19 @@
 							<tbody>
 							<?php
 								/*$q_admin = $conn->query("SELECT * FROM `admin`") or die(mysqli_error());
-								while($f_admin = $q_admin->fetch_array()){*/
+								while($data = $q_admin->fetch_array()){*/
 									
 							?>	
 								<tr class = "target">
-									<td><?php echo !isset($f_admin['username']) ? '' : $f_admin['username'] ?></td>
-									<td><?php echo !isset($f_admin['username']) ? '' :  md5($f_admin['password'])?></td>
-									<td><?php echo !isset($f_admin['username']) ? '' :  $f_admin['firstname']?></td>
-									<td><?php echo !isset($f_admin['username']) ? '' :  $f_admin['middlename']?></td>
-									<td><?php echo !isset($f_admin['username']) ? '' :  $f_admin['lastname']?></td>
+									<td><?php echo !isset($data['username']) ? '' : $data['username'] ?></td>
+									<td><?php echo !isset($data['password']) ? '' :  md5($data['password'])?></td>
+									<td><?php echo !isset($data['firstname']) ? '' :  $data['firstname']?></td>
+									<td><?php echo !isset($data['middlename']) ? '' :  $data['middlename']?></td>
+									<td><?php echo !isset($data['lastname']) ? '' :  $data['lastname']?></td>
 									<td><a href = "#" class = "btn btn-danger deladmin_id" value = "<?php
-									echo !isset($f_admin['username']) ? '' : $f_admin['admin_id']?>"><span class = "glyphicon glyphicon-remove"></span> Delete</a>
+									echo !isset($data['admin_id']) ? '' : $data['admin_id']?>"><span class = "glyphicon glyphicon-remove"></span> Delete</a>
 									<a href = "#" class = "btn btn-warning eadmin_id" value = "<?php
-									echo !isset($f_admin['username']) ? '' : $f_admin['admin_id']?>"><span class = "glyphicon glyphicon-edit"></span> Edit</a></td>
+									echo !isset($data['admin_id']) ? '' : $data['admin_id']?>"><span class = "glyphicon glyphicon-edit"></span> Edit</a></td>
 								</tr>
 							<?php
 							//	}
