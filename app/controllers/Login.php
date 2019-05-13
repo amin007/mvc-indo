@@ -90,6 +90,12 @@ class Login extends Controller
 			$data['left'] = '25';
 			$data['admin_id'] = 1;
 		//////////////////////////////////////////////////////////////////////////////////
+			/*$data['student'] = 'mcd';
+			$data['item name'] = 'ayam mcd';
+			$data['staff'] = 'staf mcd';
+			$data['status'] = 'Returned';
+			$data['date returned'] = '2019-05-01';
+			//*/
 		//////////////////////////////////////////////////////////////////////////////////
 		$this->view('template/ruangtamu/diatas', $data);
 		$this->view('template/ruangtamu/dimenu', $data);
