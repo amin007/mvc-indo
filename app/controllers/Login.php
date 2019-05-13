@@ -96,8 +96,8 @@ class Login extends Controller
 			$data['student'] = 'mcd';
 			$data['item name'] = 'ayam mcd';
 			$data['staff'] = 'staf mcd';
-			$data['status'] = 'Returned';
 			$data['date returned'] = '2019-05-01';
+			$data['status'] = 'Returned';
 		endif;//*/
 		//////////////////////////////////////////////////////////////////////////////////
 		$this->view('template/ruangtamu/diatas', $data);
