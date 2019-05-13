@@ -32,5 +32,26 @@ class Login extends Controller
 		$this->view('template/ruangtamu/dibawah');
 	}
 #------------------------------------------------------------------------------------------
+	public function account($fail)
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$data['tajukAtas'] = 'Akaun';
+		$data['bgcolor'] = 'style="background-color:#d3d3d3;"';
+		$data['fail'] = $fail;
+		//////////////////////////////////////////////////////////////////////////////////
+			$data['username'] = 'ayam';
+			$data['password'] = md5('ayam');
+			$data['firstname'] = 'ayam';
+			$data['middlename'] = 'bin';
+			$data['lastname'] = 'jantan';
+			$data['admin_id'] = 1;
+		//////////////////////////////////////////////////////////////////////////////////
+		$this->view('template/ruangtamu/diatas', $data);
+		$this->view('template/ruangtamu/dimenu', $data);
+		$this->view('ruangtamu/account',  $data);
+		$this->view('template/ruangtamu/dibawah');
+	}
+#------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------
 #==========================================================================================
 }
