@@ -27,6 +27,7 @@
 		<div class="navbar-nav">
 			<a class="nav-item nav-link active" href="<?php echo BASEURL?>">Home</a>
 			<a class="nav-item nav-link active" href="<?php echo BASEURL?>login">Login</a>
+			<a class="nav-item nav-link active" href="<?php echo BASEURL?>login/ruangtamu">Ruangtamu</a>
 			<a class="nav-item nav-link" href="<?php echo BASEURL?>mahasiswa">Mahasiswa</a>
 			<a class="nav-item nav-link" href="<?php echo BASEURL?>about">About</a>
 		</div>
