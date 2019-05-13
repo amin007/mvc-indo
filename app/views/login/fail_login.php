@@ -20,7 +20,7 @@
 		</form>
 	</div><!-- /  class="col-sm" -->
 	<div class="col-sm-1"></div><!-- /  class="col-sm" -->
-	<div class="col-sm-7" style="background-color:#f4f6f7">
+	<div class="col-sm-7" style="background-color:#f4f6f7;">
 		<img src = "<?php echo BASEURL?>public/img/logo/logo.png" height = "100%" width = "100%" />
 	</div><!-- /  class="col-sm" -->
 </div><!-- / class="row" -->
