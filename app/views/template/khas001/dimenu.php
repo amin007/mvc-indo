@@ -1,4 +1,3 @@
-<br>
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#f4f6f7">
 	<div class="container-fluid">
 		<div class="navbar-header">
