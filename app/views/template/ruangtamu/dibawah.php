@@ -7,11 +7,11 @@
 			</div>
 		</nav>
 	</body>
-	<script src = "<?php echo BASEURL?>public/js/jquery.js"></script>
+	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
-	<script src = "js/login.js"></script>
-	<script src = "js/sidebar.js"></script>
-	<script src = "js/jquery.dataTables.js"></script>
+	<script src = "<?php echo BASEURL?>public/js/login.js"></script>
+	<script src = "<?php echo BASEURL?>public/js/sidebar.js"></script>
+	<script src = "<?php echo BASEURL?>public/js/jquery.dataTables.js"></script>
 	<script type = "text/javascript">
 		$(document).ready(function(){
 			$('#table').DataTable();
