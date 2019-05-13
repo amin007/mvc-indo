@@ -13,7 +13,7 @@
 <!-- Custom Fonts -->
 <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body<?php echo isset($data['bgcolor']) ? ' ' . $data['bgcolor'] : '' ?>>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="container">
