@@ -59,11 +59,11 @@ class Login extends Controller
 		$data['bgcolor'] = 'style="background-color:#d3d3d3;"';
 		$data['fail'] = 'Buku / ' . $fail;
 		//////////////////////////////////////////////////////////////////////////////////
-			$data['Book Title'] = 'ayam';
-			$data['Category'] = md5('ayam');
-			$data['Author'] = 'ayam';
-			$data['Date Published'] = 'bin';
-			$data['Available'] = 'jantan';
+			$data['book title'] = 'ayam goreng';
+			$data['category'] = md5('ayam goreng');
+			$data['author'] = 'ayam goreng';
+			$data['date published'] = 'bin';
+			$data['available'] = 'lelaki';
 			$data['admin_id'] = 1;
 		//////////////////////////////////////////////////////////////////////////////////
 		$this->view('template/ruangtamu/diatas', $data);
