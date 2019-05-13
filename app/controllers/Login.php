@@ -19,13 +19,15 @@ class Login extends Controller
 		$this->view('template/dibawah');
 	}
 #------------------------------------------------------------------------------------------
-	public function page()
+	public function ruangtamu()
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
-		$data['tajukAtas'] = 'About Page';
-		$this->view('template/diatas', $data);
-		$this->view('about/page');
-		$this->view('template/dibawah');
+		$data['tajukAtas'] = 'Ruangtamu';
+		$data['bgcolor'] = 'style="background-color:#d3d3d3;"';
+		$this->view('template/ruangtamu/diatas', $data);
+		$this->view('template/ruangtamu/dimenu', $data);
+		$this->view('ruangtamu/index',  $data);
+		$this->view('template/ruangtamu/dibawah');
 	}
 #------------------------------------------------------------------------------------------
 #==========================================================================================
