@@ -1,6 +1,8 @@
+<br>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-sm-3">
+	<div class="col-lg-3" style="background-color:#f4f6f7; margin-left:20px;">
+		<br><br>
 		<h4>Login Here..</h4>
 		<hr style="border:1px solid #d3d3d3; width:100%;" />
 		<form method="POST" action="login.php" enctype = "multipart/form-data">
@@ -17,8 +19,9 @@
 			</div>
 		</form>
 	</div><!-- /  class="col-sm" -->
-	<div class="col-sm-6">
-		<img src = "<?php echo BASEURL?>public/img/logo/logo.png" height = "449px" width = "100%" />
+	<div class="col-sm-1"></div><!-- /  class="col-sm" -->
+	<div class="col-sm-7" style="background-color:#f4f6f7">
+		<img src = "<?php echo BASEURL?>public/img/logo/logo.png" height = "100%" width = "100%" />
 	</div><!-- /  class="col-sm" -->
 </div><!-- / class="row" -->
 </div><!-- / class="container" -->
