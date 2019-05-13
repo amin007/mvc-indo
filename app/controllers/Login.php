@@ -89,7 +89,7 @@ class Login extends Controller
 			$data['sate published'] = 'bin';
 			$data['quantity'] = '25';
 			$data['left'] = '25';
-			$data['admin_id'] = 1;
+			$data['status'] = 'Borrow';
 		endif;
 		//////////////////////////////////////////////////////////////////////////////////
 		if( $fail == 'returning'):
