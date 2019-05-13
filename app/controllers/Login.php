@@ -79,6 +79,7 @@ class Login extends Controller
 		$data['bgcolor'] = 'style="background-color:#d3d3d3;"';
 		$data['fail'] = 'Items / ' . $fail;
 		//////////////////////////////////////////////////////////////////////////////////
+		if( $fail == 'borrowing'):
 			$data['select'] = '<input type="hidden" name="book_id[]" value = "1">'
 			. '<center><input type="checkbox" name="selector[]" value = "1">'
 			. '</center>';
@@ -89,13 +90,15 @@ class Login extends Controller
 			$data['quantity'] = '25';
 			$data['left'] = '25';
 			$data['admin_id'] = 1;
+		endif;
 		//////////////////////////////////////////////////////////////////////////////////
-			/*$data['student'] = 'mcd';
+		if( $fail == 'returning'):
+			$data['student'] = 'mcd';
 			$data['item name'] = 'ayam mcd';
 			$data['staff'] = 'staf mcd';
 			$data['status'] = 'Returned';
 			$data['date returned'] = '2019-05-01';
-			//*/
+		endif;//*/
 		//////////////////////////////////////////////////////////////////////////////////
 		$this->view('template/ruangtamu/diatas', $data);
 		$this->view('template/ruangtamu/dimenu', $data);
