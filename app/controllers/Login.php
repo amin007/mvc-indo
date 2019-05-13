@@ -13,6 +13,7 @@ class Login extends Controller
 	{
 		$data['tajukAtas'] = 'Saya';
 		$this->view('template/diatas', $data);
+		$this->view('template/khas001/dimenu', $data);
 		$this->view('login/fail_login',  $data);
 		$this->view('template/dibawah');
 	}
