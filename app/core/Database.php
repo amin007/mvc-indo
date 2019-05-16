@@ -26,9 +26,9 @@ class Database
 #------------------------------------------------------------------------------------------
 	public function __construct()
 	{
-		echo '<hr>Nama class :' . __METHOD__ . '<hr>';
-		$dsn = 'mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8';
-		echo "\$dsn = $dsn<br>";
+		//echo '<hr>Nama class :' . __METHOD__ . '<hr>';
+		$dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8';
+		//echo "\$dsn = $dsn<br>";
 		$option = [
 			PDO::ATTR_PERSISTENT => true,
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
