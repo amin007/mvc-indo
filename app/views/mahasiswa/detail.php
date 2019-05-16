@@ -3,6 +3,7 @@
 //$fail = basename($_SERVER['PHP_SELF']);//Returns The Current PHP File Name
 //$folder = basename(__DIR__);//Returns The Current PHP Folder
 $p = BASEURL . 'mahasiswa';
+//semakPembolehubah($data,'data');
 #-----------------------------------------------------------------------------------------------------------
 ?>
 <div class="container mt-5">
